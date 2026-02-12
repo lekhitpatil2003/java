@@ -90,11 +90,11 @@ class SelectionStatements {
         }
 
         //this example for blood donation eligibility
-        int age = 25; 
-        if (age >= 18 && age <= 65) { 
-            System.out.println("You are eligible to donate blood."); 
-        } else { 
-            System.out.println("You are not eligible to donate blood."); 
-        }
+        // int age = 25; 
+        // if (age >= 18 && age <= 65) { 
+        //     System.out.println("You are eligible to donate blood."); 
+        // } else { 
+        //     System.out.println("You are not eligible to donate blood."); 
+        // }
     }
 }
