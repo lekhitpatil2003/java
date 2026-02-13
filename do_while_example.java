@@ -4,9 +4,9 @@ class do_while_example{
         //do{
         //    //code to be executed
         //}while(condition);
-
+        int num;
         do{
             System.out.println("FCT");
-        }while(1>10);
+        } while(num <= 5);
     }
 }
