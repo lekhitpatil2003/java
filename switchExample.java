@@ -15,5 +15,17 @@ public class switchExample {
                 System.out.println("No NUmber Matched");
                 break;
         }
+
+        char letter = 'a';
+        switch(letter) {
+            case 'a':
+            case 'b':
+            case 'c':
+                System.out.println("Pass");
+                break;
+            default:
+                System.out.println("Fail");
+                break;
+        }
     }
 }
