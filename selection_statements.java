@@ -1,6 +1,6 @@
 class SelectionStatements {
     public static void main(String[] args) {
-        int age = 17;
+        // int age = 17;
 
     //if statement
         //syntax
@@ -26,21 +26,23 @@ class SelectionStatements {
         // }
 
         //check number odd or even
-        int number = 10; 
-        if (number % 2 == 0) { 
-            System.out.println(number + " is an even number."); 
-        } else { 
-            System.out.println(number + " is an odd number.");
-        }
+        // int number = 10; 
+        // if (number % 2 == 0) { 
+        //     System.out.println(number + " is an even number."); 
+        // } else { 
+        //     System.out.println(number + " is an odd number.");
+        // }
 
         //check leaf year or not
-        int year = 2023; 
-        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) { 
-            System.out.println(year + " is a leap year."); 
-        } else { 
-            System.out.println(year + " is not a leap year."); 
-        }
+        int year = 2026; 
+        // if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) { 
+        //     System.out.println(year + " is a leap year."); 
+        // } else { 
+        //     System.out.println(year + " is not a leap year."); 
+        // }
 
+        String result = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ? "Leap Year" : "Not a Leap Year";
+        System.out.println(result);
         //else if statement
         //syntax 
         // if(condition){ 
@@ -52,42 +54,42 @@ class SelectionStatements {
         // }
         
         //student marks system
-        int marks = 37; 
-        if (marks >= 90) { 
-            System.out.println("Grade: A"); 
-        } else if (marks >= 70) { 
-            System.out.println("Grade: B"); 
-        } else if (marks >= 60) { 
-            System.out.println("Grade: C"); 
-        } else if (marks >= 35) { 
-            System.out.println("Grade: D"); 
-        } else { 
-            System.out.println("You are Fail"); 
-        }
+        // int marks = 37; 
+        // if (marks >= 90) { 
+        //     System.out.println("Grade: A"); 
+        // } else if (marks >= 70) { 
+        //     System.out.println("Grade: B"); 
+        // } else if (marks >= 60) { 
+        //     System.out.println("Grade: C"); 
+        // } else if (marks >= 35) { 
+        //     System.out.println("Grade: D"); 
+        // } else { 
+        //     System.out.println("You are Fail"); 
+        // }
 
         //given Number is positive, negative or zero
-        int num = -5; 
-        if (num > 0) { 
-            System.out.println(num + " is a positive number."); 
-        } else if (num < 0) { 
-            System.out.println(num + " is a negative number."); 
-        } else { 
-            System.out.println(num + " is zero."); 
-        }
+        // int num = -5; 
+        // if (num > 0) { 
+        //     System.out.println(num + " is a positive number."); 
+        // } else if (num < 0) { 
+        //     System.out.println(num + " is a negative number."); 
+        // } else { 
+        //     System.out.println(num + " is zero."); 
+        // }
 
         //if number is divisible by 3 and 5 then print FizzBuzz
         //if number is divisible by 3 then print Fizz
         //if number is divisible by 5 then print Buzz
-        int number = 15; 
-        if (number % 3 == 0 && number % 5 == 0) { 
-            System.out.println("FizzBuzz"); 
-        } else if (number % 3 == 0) { 
-            System.out.println("Fizz"); 
-        } else if (number % 5 == 0) { 
-            System.out.println("Buzz"); 
-        } else { 
-            System.out.println(number); 
-        }
+        // int number = 15; 
+        // if (number % 3 == 0 && number % 5 == 0) { 
+        //     System.out.println("FizzBuzz"); 
+        // } else if (number % 3 == 0) { 
+        //     System.out.println("Fizz"); 
+        // } else if (number % 5 == 0) { 
+        //     System.out.println("Buzz"); 
+        // } else { 
+        //     System.out.println(number); 
+        // }
 
         //this example for blood donation eligibility
         // int age = 25; 
