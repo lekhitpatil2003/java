@@ -35,5 +35,7 @@ public class switchExample {
             default -> 0;
         };
         System.out.println(result);
+
+        
     }
 }
