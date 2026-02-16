@@ -1,0 +1,52 @@
+Class :-
+    - class is a blueprint or template used to create objects.
+    - class is a collection of variable, objects, methods.
+    - class consist of state and behavier of object.
+    - class dosent occupy the memory until the objectis created.
+    - objects can not  exist with a class but class can existwithout any object.
+    - class name always start with upper-case 
+
+syntax of class:
+    access_modifer class class_name{
+        state
+        behavier / methods
+    }
+
+
+
+
+Objects :- 
+    - object is instance of class that has state and behavier
+    - object always occupy memory.
+    - it is a run time entity.
+    eg. think of class is a recipie and object as a actual think that is created using that recipie book.
+    
+    syntax of object : 
+        ClassName objName = new ClassName();
+
+vehicle :
+    state : Color → Red / Blue
+            Speed → 60 km/h
+            Fuel Level → 20 liters
+            Engine Status → ON / OFF
+            Model → Honda City
+    
+    behavier : startEngine()
+            stopEngine()
+            accelerate()
+            brake()
+            refuel()
+
+bank account :
+    state : Account Number
+            Account Holder Name
+            Balance
+            Account Type
+            IFSC Code
+    
+    Behavior : deposit()
+            withdraw()
+            checkBalance()
+            transfer()
+
+
