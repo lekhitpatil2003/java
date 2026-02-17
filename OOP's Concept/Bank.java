@@ -39,7 +39,7 @@ class BankAccount {
     }
 }
  
-public class Car {
+public class Bank {
     public static void main(String[] args) {
  
         // Create an object

@@ -50,3 +50,38 @@ bank account :
             transfer()
 
 
+Method :- A block of code the perform specific task and work.
+Adv :- Code Become Re-usable, code become modular (Divide into smaller part), Easy to read / test / mentain, 
+Dis-Adv :- 
+
+
+Access_Modifer: 
+- Public, Private, Protected, Default
+
+Syntax :- 
+    public class Demo {
+        access_modifer return_type Method_name (){
+
+        }
+    }
+
+1. Method with no return Type
+    -> A method dose not return any value.
+    -> Eg. Sending OTP.
+2. Method with return Type
+    -> A method that returns a value to the caller (Main Method).
+3. method with parameter
+    -> A method that accept input values.
+4. method with no parameter
+    -> A method dose not take any input.
+5. Static Method
+    -> A method that belongs to the class not to object.
+6. Instance  Method
+    ->
+
+Why your main method is always static ?
+-> because the JVM calls it without creating an object of the class.
+-> static means it dose not change its state. when we put static in front of somethings (varable, method, class).
+-> it means this things belongs to the class not to the any object
+-> it will have only one copy. only one copy of that member (class, ) exist in a memory regardless of how many object of the class you created
+-> we access without created object using class name, member name
