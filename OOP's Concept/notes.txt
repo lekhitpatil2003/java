@@ -85,3 +85,36 @@ Why your main method is always static ?
 -> it means this things belongs to the class not to the any object
 -> it will have only one copy. only one copy of that member (class, ) exist in a memory regardless of how many object of the class you created
 -> we access without created object using class name, member name
+
+
+Constructor :-
+- it is a apecial block of code in java which has same name as class name and it runs automatically when we create an object using new keyword.
+
+    - No return type even void
+    - same name as class name
+    - it is call automatically when object is created.
+
+
+this :
+- keyword refers to current object and mainly used to resolved nanflicts between fields and parameters to pass current conflict one constructor to another
+
+Types:
+1. Default: 
+    -constructor with no parameter
+    -if you dont create constructor then java compiler created automatically
+    -when we want set default values then we use default constructor.
+
+2. Parameterized Constructor: 
+    -
+
+
+
+diff betn constructor and method
+Feature         	    Constructor         	      |      Method
+Purpose     	    Initialize object	              | Perform action
+Name	            Same as class name	              | Any valid name
+Return Type	        No return type (not even void)	  | Must have return type (void/int/etc.)
+When It Runs	Automatically when object is created  | Called manually
+Can Be Overloaded	    Yes	                          |     Yes
+Can Be Inherited	    No	                          |     Yes
+Keyword Needed	        No	                          |     No
