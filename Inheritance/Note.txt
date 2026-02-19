@@ -1,0 +1,22 @@
+
+Types of inheritance:
+    1.Single inheritance
+        - it allows (derived class) child class to reuse propertys and methods of parent class (Base class)
+        - insted of rewriting the same code with multiple palces we allows child class to reuse the parent properties and methods.
+        - Parent > Child
+
+        Syntax:
+            class Parent {
+                //properties and methods
+            }
+            class Child extends Parent{
+                //additional properties and method
+            }
+
+    2.Multi-level inheritance
+        - Parent > Child > GrandChild
+
+    3.Hierachical inheritance
+    4.multiple inheritance (Not supported by java but we can achieve this by interface)
+
+Ruls of inheritance in Java
