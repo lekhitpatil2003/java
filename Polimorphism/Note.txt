@@ -1,0 +1,13 @@
+Polimorphism :
+    - one name many form
+    - it means the same method an acts differently depending on running object.
+    - Using inheritance and use @ override notation is optional not recommended
+    
+Types :
+    1. Runtime Polimorphism :
+        - Also Called Overriding
+        - it occurs when the method call is resolve at runtime based on object.
+
+    2. Compile-Time Polimorphism :
+        - Also Called Overloading
+        - it is we achieve using same method but (diff. signature) means diff. no. of parameter, diff types of parameter
