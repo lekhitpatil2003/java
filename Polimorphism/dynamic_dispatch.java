@@ -39,5 +39,11 @@ public class dynamic_dispatch {
         obj3.name(); // This will call the name() method of Smartphone class because of dynamic dispatch
         //obj3.swagat(); // This will give an error because the reference type is Phone which does not have swagat() method
         
+        //Downcasting
+        Smartphone obj4 = (Smartphone) obj3; // Downcasting
+        obj4.swagat(); // This will work because the reference type is Smartphone which has swagat() method
+
+        //Another way of downcasting without creating a new reference variable
+        ((Smartphone)obj3).swagat(); // This will also work because we are downcasting the reference type to Smartphone which has swagat() method
     }
 }
