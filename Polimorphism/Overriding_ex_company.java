@@ -51,7 +51,7 @@ class TemporaryEmployee extends Employee {
     }
 }
 
-public class Company {
+public class Overriding_ex_company {
     public static void main(String[] args) {
         FullTimeEmployee FTE = new FullTimeEmployee();
         FTE.name = "Yogesh";
