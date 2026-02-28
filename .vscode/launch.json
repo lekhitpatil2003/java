@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PaymentService",
+            "request": "launch",
+            "mainClass": "Abstraction.PaymentService",
+            "projectName": "java_190e1334"
+        },
+        {
+            "type": "java",
             "name": "GettersAndSetters",
             "request": "launch",
             "mainClass": "GettersAndSetters.GettersAndSetters",
