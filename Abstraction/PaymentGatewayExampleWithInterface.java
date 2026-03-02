@@ -1,39 +1,39 @@
 package Abstraction;
 import java.util.Scanner;
 
-// Abstract class defines the contract for all payments
-abstract class Payment {
+// Interface to define a contract for all payment methods
+interface IPayment {
+    void processPayment(double amount);
 
-    public abstract void processPayment(double amount);
-
-    public abstract void generateReceipt();
+    void generateReceipt();
 }
 
 // Credit Card Payment Implementation
-class CreditCardPayment extends Payment {
+class CreditCardPayment implements IPayment {
 
-    private final String cardNumber;
+    private String cardNumber;
 
     public CreditCardPayment(String cardNumber) {
+        this.cardNumber = cardNumber;
         this.cardNumber = cardNumber;
     }
 
     @Override
     public void processPayment(double amount) {
-        System.out.println("Processing Credit Card Payment of Rs "
-                + amount + " using Card Number: " + cardNumber);
+        System.out.println("💳 Processing Credit Card Payment of ₹" + amount +
+                " using Card Number: " + cardNumber);
     }
 
     @Override
     public void generateReceipt() {
-        System.out.println("Credit Card Payment Receipt Generated.");
+        System.out.println("📄 Credit Card Payment Receipt Generated.");
     }
 }
 
 // UPI Payment Implementation
-class UpiPayment extends Payment {
+class UpiPayment implements IPayment {
 
-    private final String upiId;
+    private String upiId;
 
     public UpiPayment(String upiId) {
         this.upiId = upiId;
@@ -41,20 +41,20 @@ class UpiPayment extends Payment {
 
     @Override
     public void processPayment(double amount) {
-        System.out.println("Processing UPI Payment of Rs "
-                + amount + " using UPI ID: " + upiId);
+        System.out.println("📲 Processing UPI Payment of ₹" + amount +
+                " using UPI ID: " + upiId);
     }
 
     @Override
     public void generateReceipt() {
-        System.out.println("UPI Payment Receipt Generated.");
+        System.out.println("📄 UPI Payment Receipt Generated.");
     }
 }
 
 // Net Banking Payment Implementation
-class NetBankingPayment extends Payment {
+class NetBankingPayment implements IPayment {
 
-    private final String userId;
+    private String userId;
 
     public NetBankingPayment(String userId) {
         this.userId = userId;
@@ -62,22 +62,22 @@ class NetBankingPayment extends Payment {
 
     @Override
     public void processPayment(double amount) {
-        System.out.println("Processing Net Banking Payment of Rs "
-                + amount + " for User ID: " + userId);
+        System.out.println("🏦 Processing Net Banking Payment of ₹" + amount +
+                " for User ID: " + userId);
     }
 
     @Override
     public void generateReceipt() {
-        System.out.println("Net Banking Payment Receipt Generated.");
+        System.out.println("📄 Net Banking Payment Receipt Generated.");
     }
 }
 
-// Service that uses abstraction
+// Service that uses IPayment for processing
 class PaymentService {
 
-    private final Payment payment;
+    private IPayment payment;
 
-    public PaymentService(Payment payment) {
+    public PaymentService(IPayment payment) {
         this.payment = payment;
     }
 
@@ -88,7 +88,7 @@ class PaymentService {
 }
 
 // Main Program
-public class PaymentGatewayExampleUsingAbstract {
+public class PaymentGatewayExampleWithInterface {
 
     public static void main(String[] args) {
 
@@ -99,8 +99,9 @@ public class PaymentGatewayExampleUsingAbstract {
 
         System.out.print("Enter Amount: ");
         double amount = scanner.nextDouble();
+        scanner.nextLine(); // consume leftover newline
 
-        Payment payment;
+        IPayment payment;
 
         switch (choice) {
             case 1:
@@ -123,14 +124,14 @@ public class PaymentGatewayExampleUsingAbstract {
 
             default:
                 System.out.println("Invalid choice!");
+
                 scanner.close();
-                return; // Exit safely
+                return;
         }
 
         PaymentService service = new PaymentService(payment);
         service.executePayment(amount);
 
         scanner.close();
-
     }
 }
