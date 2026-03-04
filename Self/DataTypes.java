@@ -1,4 +1,4 @@
-public class demo {
+public class DataTypes {
     public static void main(String[] args){
         //Integer --> byte , short , int , long
         // Binary (2), Octal (8), Decimal (10), Hexadecimal (16) number system
