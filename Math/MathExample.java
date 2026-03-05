@@ -29,6 +29,8 @@ public class MathExample {
         double randomValue = Math.random();
         System.out.println("Random Value: " + randomValue);
 
-        // 
+        // Rounding
+        double roundValue = Math.round(3.7);
+        System.out.println("Rounded Value: " + roundValue);
     }
 }
