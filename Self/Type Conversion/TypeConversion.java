@@ -28,8 +28,16 @@ public class TypeConversion {
 
         // boolean to any data type 
         // These conversion are not possible
-        boolean b4 = true;
-        int i4;
-        // i4 = (int) b4;  // not possible beca
+        // boolean b4 = true;
+        // int i4;
+        // i4 = (int) b4;  // not possible because boolean is not compatible with any other data type
+
+        //Automatic Type Promotion in Expressions
+        byte b4 = 50;
+        //b = b * 2; // this is not possible because the result of b*2 is int and it cannot be assigned to byte without explicit casting
+        b4 = (byte) (b4 * 2); // this is working because we are explicitly casting the result to byte
+        System.out.println("Automatic Type Promotion in Expressions : " + b4); //100
+
+
     }
 }
