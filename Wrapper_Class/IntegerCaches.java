@@ -14,4 +14,5 @@ public class IntegerCaches {
     Integer d = 200;
     System.out.println(c == d); // Output: false (not cached)
     System.out.println(c.equals(d)); // Output: true
+    }
 }
