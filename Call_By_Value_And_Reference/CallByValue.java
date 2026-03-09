@@ -1,4 +1,4 @@
-package CallByValue;
+package Call_By_Value_And_Reference;
 
 public class CallByValue {
     public static void changeValue(int x) {
