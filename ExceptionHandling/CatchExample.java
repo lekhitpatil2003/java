@@ -12,9 +12,11 @@ public class CatchExample {
             int arr[] = {10, 20, 30, 40};
             System.out.println(arr[4]);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Index Dose not Exist ...");
+            // System.out.println("Index Dose not Exist ...");
+            System.out.println(e);
         } catch (ArithmeticException e){
-            System.out.println("Cannot Divide by Zero ...");
+            // System.out.println("Cannot Divide by Zero ...");
+            System.out.println(e);
         }
         System.out.println("Program Continue ...");
     }
