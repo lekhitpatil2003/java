@@ -13,11 +13,11 @@ class Task extends Thread {
 
 public class MultiJoinExample {
     public static void main(String[] args) throws Exception {
-        Thread th1 = new Thread("FCT");
+        Thread th1 = new Thread("FCT1");
         Task t1 = new Task();
         Task t2 = new Task();
         t1.start();
-        t1.join();
+        t1.join(); 
         t2.start();
         t2.join();
         System.out.println("Main COmpleted.");
