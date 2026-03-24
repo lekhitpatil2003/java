@@ -1,0 +1,4 @@
+Hello Lekhit, this is fileOutputStream.
+This line is appended.
+This line is appended.
+This line is appended.
