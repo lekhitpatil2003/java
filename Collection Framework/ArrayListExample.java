@@ -9,7 +9,7 @@ public class ArrayListExample {
         names.add("Lekhit");
         names.add("Yogesh");
         names.add("Vaibhav");
-        
+        names.add("Om");
 
         System.out.println(names);
 
